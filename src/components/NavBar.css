@@ -1,0 +1,30 @@
+h1 {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+li {
+    text-align: start;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a img {
+    width: 200px;
+    height: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+.colorVailote {
+    color: #3e4095 !important;
+}
+
+
+.colorVailote:hover {
+    background-color: #fcb32f;
+    color: #3e4095 !important;
+}

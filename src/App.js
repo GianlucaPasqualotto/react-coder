@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+//import logo from './rapidLubeService-logoAzul.png';
 import './App.css';
+import img from "./imagenes/rapidLubeService-banerAzul.png"
+import NavBar from './components/NavBar.js';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+
+  let userColor = "blue";
+  const styles = {marginTop: "10px", color: userColor, fontSize: "30px"};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+        <img src={ img } />
+        <h1>Mi primer E-Commerce con React</h1>
+        <br/>
+        <p style={styles}>Carrito de Compras</p>
+        <button onClick={ () => alert("Hola Usuario") }>Clic Me</button>
     </div>
   );
 }
