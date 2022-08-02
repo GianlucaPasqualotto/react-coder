@@ -1,22 +1,36 @@
-//import logo from './rapidLubeService-logoAzul.png';
+import {NavBar} from './components/Navbar/NavBar';
+import Card from "./components/Card/Card";
+import Button from './components/Btn/Button';
+
+
 import './App.css';
-import img from "./imagenes/rapidLubeService-banerAzul.png"
-import NavBar from './components/NavBar.js';
-import 'bootstrap/dist/css/bootstrap.css';
 
-function App() {
+function App () {
 
-  let userColor = "blue";
-  const styles = {marginTop: "10px", color: userColor, fontSize: "30px"};
+  const styles = {marginTop: "10px", color:"blue", fontSize: "30px"};
+
+  const dataProducts = [
+  {
+  name: "Aceite Mobil",
+  price: 5400,
+  imgurl: "https://http2.mlstatic.com/D_NQ_NP_2X_995600-MLA49805367577_042022-F.webp",
+  description: "10W-40",
+},
+{
+  name: "Aceite Castrol",
+  price: 6400,
+  imgurl: "https://http2.mlstatic.com/D_NQ_NP_2X_933821-MLA45711915954_042021-F.webp",
+  description: "10W-40",
+},
+]
 
   return (
-    <div>
-      <NavBar/>
-        <img src={ img } />
-        <h1>Mi primer E-Commerce con React</h1>
-        <br/>
+    <div className='App'>
+      <NavBar />
+        <h1 className='title'>Mi primer E-Commerce con React</h1>
         <p style={styles}>Carrito de Compras</p>
-        <button onClick={ () => alert("Hola Usuario") }>Clic Me</button>
+        <Button text="Comprar"/>
+      <Card dataProduct={dataProducts[0]} />
     </div>
   );
 }
