@@ -5,9 +5,9 @@ export const Card = (props) => {
 
     return (
         <div className="card">
-            {/* <div className="card-img">
+            <div className="card-img">
                 <img src={props.data.imgurl} alt="imagen" />
-            </div> */}
+            </div>
             <div className="card-detail">
                 <h2>Hola</h2>
                 <p>{props.data.description}</p>

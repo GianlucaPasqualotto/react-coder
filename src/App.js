@@ -1,13 +1,22 @@
 import {NavBar} from './components/Navbar/NavBar';
 import Card from "./components/Card/Card";
-import Button from './components/Btn/Button';
+// import Button from './components/Btn/Button';
+// import CardWigget from './components/CardWidget/CardWidget';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount';
 
 
 import './App.css';
+import CardWidget from './components/CardWidget/CardWidget';
 
 function App () {
 
-  const styles = {marginTop: "10px", color:"blue", fontSize: "30px"};
+
+  const Items = [
+    { 
+    item: "Sección Aceites",
+  }
+  ]
 
   const dataProducts = [
   {
@@ -26,11 +35,12 @@ function App () {
 
   return (
     <div className='App'>
-      <NavBar />
-        <h1 className='title'>Mi primer E-Commerce con React</h1>
-        <p style={styles}>Carrito de Compras</p>
-        <Button text="Comprar"/>
-      <Card dataProduct={dataProducts[0]} />
+      <NavBar>
+        <CardWidget />
+      </NavBar>
+      <ItemListContainer ItemListContainer={Items[0]}/>
+      <Card dataProduct={dataProducts[0]}/>
+      <ItemCount initial={1} stock={5} />
     </div>
   );
 }
