@@ -1,5 +1,14 @@
+.main {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-logo {
