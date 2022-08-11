@@ -1,4 +1,4 @@
-const ItemsData = [{
+const ItemData = [{
     "id": 1,
     "name": "Aceite Mobil 10W-40",
     "price": 5400,
@@ -84,4 +84,4 @@ const ItemsData = [{
     "stock": 94
 }]
 
-export default ItemsData;
+export default ItemData;

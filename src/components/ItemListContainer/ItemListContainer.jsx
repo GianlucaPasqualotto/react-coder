@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import "../ItemListContainer.css";
-import ItemsData from "../../data/Data";
+import ItemData from "../../data/Data";
 import Card from "../Card/Card";
 import Data from "../../data/Data"
 import Item from "../Item/Item";
@@ -8,7 +8,7 @@ import ItemList from "../ItemList/ItemList";
 
 function getProductos() {
     return new Promise( (resolve) => {
-        setTimeout( ()=> resolve(ItemsData), 2000)
+        setTimeout( ()=> resolve(ItemData), 2000)
     })
 };
     

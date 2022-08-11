@@ -1,0 +1,30 @@
+#card {
+    margin: 10px 100px 10px 100px;
+}
+.item {
+    display: flex;
+    grid-template-columns: column;
+    height: 50px;
+}
+
+#img {
+    width: 300px;
+    height: 400px;
+}
+
+.card-title {
+    color: blue;
+    font-size: 50px;
+}
+.card-text {
+    color: rgb(6, 6, 186);
+    font-size: 30px;
+}
+
+#btn {
+    text-align: end;
+}
+
+.card-body {
+    text-align: center;
+}

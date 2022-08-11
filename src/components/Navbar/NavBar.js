@@ -1,4 +1,4 @@
-import CardWidget from '../CardWidget/CardWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 
 
@@ -33,7 +33,7 @@ export const NavBar = () => {
                 <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
                 <button className="btn me-3" type="submit">🔎</button>
             </form>
-            <CardWidget />
+            <CartWidget />
             </div>
             </div>
         </nav>

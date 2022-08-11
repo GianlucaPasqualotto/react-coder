@@ -17,14 +17,12 @@ function ItemCount( {initial, stock} ){
     return(
 
         <div className="container-fluid">
-            <div className='d-flex'>
+                <h4>Cantidad: {count}</h4>
                 <button className='btn' onClick={ handleIncrement }>+</button>
                 <button className='btn' onClick={ handleDecrement }>-</button>
-                <button className='btn' onClick={ ()=> setCount(1) }>Reiniciar</button>
-                <button className='btn' onClick={ onAdd }>Comprar</button><br></br>
-                <h4>Cantidad: {count}</h4>
+                <button className='btn' onClick={ ()=> setCount(1) }>🔄</button>
+                <button className='btn' onClick={ onAdd }>🛒</button><br></br>
             </div>
-        </div>
 )
 }
 

@@ -16,9 +16,9 @@ function Item ( {name, img, description, price, stock} ) {
                     <h3>$ {price}</h3>
                     <h6>Disponibles: {stock}</h6>
                     <Button text="Ver más"></Button>
-                    <ItemCount />
+                    <ItemCount initial={1} stock={5} />
                     </div>
-                </div>
+            </div>
     );
 }  
 
