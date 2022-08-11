@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useParams } from "react";
 // import "../ItemListContainer.css";
 import ItemData from "../../data/Data";
 import Card from "../Card/Card";
@@ -6,18 +6,22 @@ import Data from "../../data/Data"
 import Item from "../Item/Item";
 import ItemList from "../ItemList/ItemList";
 
+
 function getProductos() {
     return new Promise( (resolve) => {
         setTimeout( ()=> resolve(ItemData), 2000)
     })
 };
     
-export default function ItemListContainer() {
+const ItemListContainer = () => {
     const [data, setData] = useState([]);
+    // const idCategory = useParams().idCategory
 
     useEffect(() => {
-        getProductos().then((respuesta) => {
-            setData(respuesta);
+        getProductos()
+        .then((respuesta) => {
+        // respuesta.filter(elemento => elemento.category === idCategory)
+        setData(respuesta);
         });
     }, []);
     
@@ -28,10 +32,11 @@ export default function ItemListContainer() {
             return (
                 <Item
                     key={productos.id}
+                    id={productos.id}
                     name={productos.name}
                     img={productos.img}
                     price={productos.price} 
-                    description={productos.description}
+                    description={productos.category}
                     stock={productos.stock}
                 />
             );
@@ -39,3 +44,5 @@ export default function ItemListContainer() {
     </div>
 );
 }
+
+export default ItemListContainer;

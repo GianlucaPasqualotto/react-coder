@@ -15,7 +15,7 @@ function ItemDetail ( {data} ) {
                 <div className="col-md-8">
                 <div className="card-body">
                     <h2 className="card-title">{data.name}</h2>
-                    <p className="card-text">Categoría: {data.description}</p>
+                    <p className="card-text">Categoría: {data.category}</p>
                     <h3 className="card-text">Precio: $ {data.price}</h3>
                     <hr />
                     <ItemCount className="card-body" initial={1} stock={5} />
