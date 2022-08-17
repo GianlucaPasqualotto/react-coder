@@ -5,24 +5,24 @@ import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
     const [data, setData] = useState({});
-    const idURL = useParams().id;
-
-
-function getProducto() {
-    return new Promise( (resolve, reject) => {
-        let itemRequested = ItemData.find( elemento => elemento.id == idURL)
-        if (itemRequested === undefined)
-            reject("No encontramos el producto")
-        else
-            resolve(itemRequested);
-    });
-};
+    const { id } = useParams();
+    function getProducto() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+            let itemRequested = ItemData.find(
+                (elemento) => elemento.id === Number(id)
+            );
+            if (itemRequested === undefined) reject("No encontramos el item");
+            else resolve(itemRequested);
+            }, 1000);
+        });
+    }
 
     useEffect(() => {
         getProducto()
-        .then((products) => setData(products))
+        .then((respuesta) => setData(respuesta))
         .catch((error) => alert(error));
-    }, [])
+}, []);
     
     return (
         <div>

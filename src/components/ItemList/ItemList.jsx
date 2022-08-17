@@ -1,26 +1,23 @@
-import React, { useEffect, useState } from "react";
-
+import React from "react";
 import Item from "../Item/Item";
 import Data from "../../data/Data";
 import ItemData from "../../data/Data";
-import "./ItemList.css";
 
-function ItemList( {ItemData} ) { 
+function ItemList( {data} ) { 
     return(
-        <div>
-            <h1>Sección Aceites</h1>
-            <ItemList 
-                key={ItemData.id}
-                name={ItemData.name}
-                img={ItemData.img}
-                price={ItemData.price} 
-                description={ItemData.description}
-                stock={ItemData.stock}
-            />    
-        </div>
-        )
-    }
-
-
-
+        data.map((product) => {
+            return (
+                <Item
+                    id={product.id}
+                    key={product.id}
+                    name={product.name}
+                    img={product.img}
+                    price={product.price} 
+                    description={product.description}
+                    stock={product.stock}
+                />    
+            )
+        })
+    )
+}
 export default ItemList;

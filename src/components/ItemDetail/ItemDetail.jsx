@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Button from '../Btn/Button';
 import ItemCount from "../ItemCount/ItemCount";
-import "./ItemDetail.css"
+import "./ItemDetail.css";
+import { Link } from "react-router-dom";
 
 function ItemDetail ( {data} ) {
     
@@ -18,8 +19,10 @@ function ItemDetail ( {data} ) {
                     <p className="card-text">Categoría: {data.category}</p>
                     <h3 className="card-text">Precio: $ {data.price}</h3>
                     <hr />
-                    <ItemCount className="card-body" initial={1} stock={5} />
+                    <ItemCount className="card-body" initial={1} stock={data.stock} />
                     <small className="text-muted">Disponibles: {data.stock}</small>
+                    <Link to={`/category/${data.category}`}>Volver a Categoría: {data.category}</Link>
+                    <Link to={"/"}>Volver al inicio</Link>
                     </div>
                     </div>
                 </div>
