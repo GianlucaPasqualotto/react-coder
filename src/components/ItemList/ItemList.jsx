@@ -1,7 +1,5 @@
 import React from "react";
 import Item from "../Item/Item";
-import Data from "../../data/Data";
-import ItemData from "../../data/Data";
 
 function ItemList( {data} ) { 
     return(

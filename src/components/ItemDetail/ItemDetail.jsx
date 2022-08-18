@@ -1,10 +1,17 @@
 import React from 'react';
-import Button from '../Btn/Button';
 import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Button from '../Btn/Button';
 
 function ItemDetail ( {data} ) {
+    const [count,setCount] = useState(0);
+    const addToCart=(count)=>{
+
+    console.log(`Agregaste ${count} ${data.name} al carrito`);
+    setCount(count);
+}
     
     return (
             <div id="card">
@@ -19,10 +26,11 @@ function ItemDetail ( {data} ) {
                     <p className="card-text">Categoría: {data.category}</p>
                     <h3 className="card-text">Precio: $ {data.price}</h3>
                     <hr />
-                    <ItemCount className="card-body" initial={1} stock={data.stock} />
-                    <small className="text-muted">Disponibles: {data.stock}</small>
-                    <Link to={`/category/${data.category}`}>Volver a Categoría: {data.category}</Link>
-                    <Link to={"/"}>Volver al inicio</Link>
+                    <ItemCount className="card-body" initial={1} stock={data.stock} addToCart={addToCart} />
+                    <small className="text-muted">Disponibles: {data.stock}</small> <hr></hr>
+                    <Link to={`/category/${data.category}`}><button className='btn'>Volver a Categoría: {data.category}</button></Link>
+                    <Link to={"/"}><button className='btn'>Volver al inicio</button></Link>
+                    <Link to={"/cart"}><button className='btn'>Finalizar Compra</button></Link>
                     </div>
                     </div>
                 </div>

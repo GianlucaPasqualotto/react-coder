@@ -4,84 +4,84 @@ const ItemData = [{
     "price": 5400,
     "category": "Aceites",
     "img": "https://http2.mlstatic.com/D_NQ_NP_2X_995600-MLA49805367577_042022-F.webp",
-    "stock": 5
+    "stock": 15
 }, {
     "id": 2,
     "name": "Aceite Castrol 10W-40",
     "price": 6400,
     "category": "Aceites",
     "img": "https://http2.mlstatic.com/D_NQ_NP_2X_933821-MLA45711915954_042021-F.webp",
-    "stock": 5
+    "stock": 15
 }, {
     "id": 3,
-    "name": "American Revolutionary: The Evolution of Grace Lee Boggs",
-    "price": 38,
-    "category": "Documentary",
-    "img": "http://dummyimage.com/280x280.png/ff4444/ffffff",
-    "stock": 90
+    "name": "Aceite Petronas Syntium 1000 10W-40",
+    "price": 5050,
+    "category": "Aceites",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_861876-MLA32775871655_112019-O.webp",
+    "stock": 15
 }, {
     "id": 4,
-    "name": "Trio, The (Trio, Das)",
-    "price": 82,
-    "category": "Drama|Romance",
-    "img": "http://dummyimage.com/280x280.png/dddddd/000000",
-    "stock": 29
+    "name": "Kit de Filtros Wega Toyota Hilux",
+    "price": 7250,
+    "category": "Filtros",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_879417-MLA45434903832_042021-O.webp",
+    "stock": 10
 }, {
     "id": 5,
-    "name": "Sunday in the Country, A (Un dimanche à la campagne)",
-    "price": 14,
-    "category": "Drama",
-    "img": "http://dummyimage.com/280x280.png/cc0000/ffffff",
-    "stock": 78
+    "name": "Kit de Filtros GM Chevrolet S10",
+    "price": 14600,
+    "category": "Filtros",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_948305-MLA44559391036_012021-O.webp",
+    "stock": 10
 }, {
     "id": 6,
-    "name": "Scorned",
-    "price": 23,
-    "category": "Thriller",
-    "img": "http://dummyimage.com/280x280.png/cc0000/ffffff",
-    "stock": 47
+    "name": "Kit de Filtros Volskwagen",
+    "price": 3500,
+    "category": "Filtros",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_608482-MLA45444315441_042021-O.webp",
+    "stock": 10
 }, {
     "id": 7,
-    "name": "Day of the Animals",
-    "price": 13,
-    "category": "Horror|Thriller",
-    "img": "http://dummyimage.com/280x280.png/cc0000/ffffff",
+    "name": "Kit de Filtros Wega Ford Ranger",
+    "price": 7500,
+    "category": "Filtros",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_842449-MLA47074903797_082021-O.webp",
     "stock": 25
 }, {
     "id": 8,
-    "name": "Ruby Red",
-    "price": 19,
-    "category": "Adventure|Children|Fantasy|Sci-Fi",
-    "img": "http://dummyimage.com/280x280.png/ff4444/ffffff",
-    "stock": 5
+    "name": "Aceite Liqui Moly 10W-40",
+    "price": 8900,
+    "category": "Aceites",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_894202-MLA43996908064_112020-O.webp",
+    "stock": 15
 }, {
     "id": 9,
-    "name": "Pinocchio",
-    "price": 32,
-    "category": "Children|Fantasy|Musical",
-    "img": "http://dummyimage.com/280x280.png/ff4444/ffffff",
-    "stock": 27
+    "name": "Bateria Herbo Reforzada Plus Max",
+    "price": 18500,
+    "category": "Baterías",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_997814-MLA42956465049_072020-O.webp",
+    "stock": 5
 }, {
     "id": 10,
-    "name": "Beyond Silence (Jenseits der Stille)",
-    "price": 50,
-    "category": "Drama",
-    "img": "http://dummyimage.com/280x280.png/ff4444/ffffff",
-    "stock": 71
+    "name": "Batería Prestolite Free",
+    "price": 25600,
+    "category": "Baterías",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_865338-MLA50605068457_072022-O.webp",
+    "stock": 5
 }, {
     "id": 11,
-    "name": "Eraserhead",
-    "price": 44,
-    "category": "Drama|Horror",
-    "img": "http://dummyimage.com/280x280.png/dddddd/000000",
-    "stock": 24
+    "name": "Lámpara Bosch H7 Plus",
+    "price": 1500,
+    "category": "Lámparas",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_980071-MLA49849692574_052022-O.webp",
+    "stock": 20
 }, {
     "id": 12,
-    "name": "Kandahar (Safar e Ghandehar)",
-    "price": 36,
-    "category": "Drama",
-    "img": "http://dummyimage.com/280x280.png/5fa2dd/ffffff",
-    "stock": 94
+    "name": "Kit Cree Led c6",
+    "price": 1650,
+    "category": "Lámparas",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_610485-MLA47250643970_082021-O.webp",
+    "stock": 20
 }]
 
 export default ItemData;

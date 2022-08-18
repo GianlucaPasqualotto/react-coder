@@ -5,7 +5,7 @@ h1 {
     padding: 20px;
 }
 li {
-    text-align: start;
+    text-align: center;
     text-decoration: none;
     font-size: 25px;
 }
@@ -27,4 +27,8 @@ img {
 .colorVailote:hover {
     background-color: #fcb32f;
     color: #3e4095 !important;
+}
+
+.navbar-nav {
+    padding-left: 50px;
 }
