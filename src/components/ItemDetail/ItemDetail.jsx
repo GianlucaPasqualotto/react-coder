@@ -2,15 +2,17 @@ import React from 'react';
 import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Button from '../Btn/Button';
+import { cartContext } from "../../store/cartContext";
+import Item from '../Item/Item';
 
 function ItemDetail ( {data} ) {
-    const [count,setCount] = useState(0);
-    const addToCart=(count)=>{
-
-    console.log(`Agregaste ${count} ${data.name} al carrito`);
-    setCount(count);
+    const { addToCart } = useContext(cartContext);
+    const [countCart, setCountCart] = useState(0);
+    function onAdd(amount) {
+        addToCart(data, amount);
+        setCountCart(amount);
 }
     
     return (
@@ -25,12 +27,17 @@ function ItemDetail ( {data} ) {
                     <h2 className="card-title">{data.name}</h2>
                     <p className="card-text">Categoría: {data.category}</p>
                     <h3 className="card-text">Precio: $ {data.price}</h3>
+                    <small className="text-muted">Disponibles: {data.stock}</small> 
                     <hr />
-                    <ItemCount className="card-body" initial={1} stock={data.stock} addToCart={addToCart} />
-                    <small className="text-muted">Disponibles: {data.stock}</small> <hr></hr>
+                    {countCart === 0 ?
+                        <ItemCount className="card-body" initial={1} stock={data.stock} onAdd={onAdd} /> :
+                        <>
+                        <ItemCount stock={data.stock} initial={1} onAdd={onAdd}/>
+                        <Link to={"/cart"}><button className='btn'>Ver Carrito</button></Link> <hr></hr>
+                        </>
+                    }
                     <Link to={`/category/${data.category}`}><button className='btn'>Volver a Categoría: {data.category}</button></Link>
                     <Link to={"/"}><button className='btn'>Volver al inicio</button></Link>
-                    <Link to={"/cart"}><button className='btn'>Finalizar Compra</button></Link>
                     </div>
                     </div>
                 </div>

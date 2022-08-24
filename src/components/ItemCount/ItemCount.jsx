@@ -1,25 +1,20 @@
 import React, { useState }  from 'react';
-import Button from "../Btn/Button";
 
-function ItemCount( { initial, stock, addToCart } ){
-    const [count, setCount] = useState(initial); 
+function ItemCount( { initial, stock, onAdd } ){
+    const [amount, setAmount] = useState(initial); 
 
-    const handleIncrement = () => (count < stock) && setCount(count + 1);
+    const handleIncrement = () => (amount < stock) && setAmount(amount + 1);
     
-    const handleDecrement = () => (count > initial) && setCount(count - 1);
-
-    // const onAdd = () => {
-    //     setCount(1);
-    // }
+    const handleDecrement = () => (amount > initial) && setAmount(amount - 1);
 
     return(
 
         <div className="container-fluid">
-                <h4>Cantidad: {count}</h4>
+                <h4>Cantidad: {amount}</h4>
                 <button className='btn' onClick={ handleIncrement }>+</button>
                 <button className='btn' onClick={ handleDecrement }>-</button>
-                <button className='btn' onClick={ ()=> setCount(1) }>🔄</button>
-                <button className='btn' onClick={() => addToCart(count) }>🛒</button><br></br>
+                <button className='btn' onClick={ ()=> setAmount(1) }>🔄</button>
+                <button className='btn' onClick={() => onAdd(amount) }>Agregar al 🛒</button><br></br>
             </div>
 )
 }
