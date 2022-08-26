@@ -23,7 +23,6 @@ if (cart.length === 0) {
             <div className="emptyCartContainer">
                 <div className="titleEmptyContainer">
                     <h1>Carrito Vacío</h1>
-                    <FontAwesomeIcon className="emptyCartFace" icon={faFaceSadTear} />
                 </div>
                 <span><FontAwesomeIcon className="emptyCart" icon={faCartArrowDown} /></span>
                 <Link to={"/"}><button className="cartResumeButtons">Ir a Comprar </button></Link>
@@ -56,13 +55,14 @@ else {
                 <h3 className="resume">Cantidad de Productos: {totalAmount()} x ${Data[0].price}</h3>
                 <h3 className="resume">Subtotal: ${totalPrice()}</h3>
                 <h3 className="resume">IVA: ${totalPrice() * 0.21}</h3>
-                <h3 className="resume">Envío: Gratuito</h3>
                 <h2 className="totalResume">Total: $ {totalPrice() * 1.21}</h2>
+                <h4 className="resume">Envio gratis a todo Argentina</h4>
                 <div className="containerButtonsResume">
                     <Link to={"/"}><button className="cartResumeButtons">Seguir Comprando</button></Link>
                     <Link to={"/checkout"}><button className="cartResumeButtons">Finalizar Compra</button></Link>
                 </div>
-                <img className="paymentResume" src="https://res.cloudinary.com/dveku4pvl/image/upload/v1661110744/mercadopago_logos1_rld5ya.jpg" alt="Medios de Pago"></img>
+                <h1 className="titleResume">Medios de pago disponibles:</h1>
+                    <img className="paymentResume" src="https://cdn.simplesite.com/i/4d/e6/284571206315009613/i284571214513706839._szw1280h1280_.jpg" alt="Medios de Pago"></img>
             </section>
         </main>
     )
