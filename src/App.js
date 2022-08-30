@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './store/cartContext';
 import Cart from "./components/Cart/Cart";
 
+import firestoreDB from "./services/firebase";
+
 import './App.css';
 
 function App () {

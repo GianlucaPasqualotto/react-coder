@@ -3,32 +3,56 @@ import React, { useEffect, useState } from "react";
 import ItemData from "../../data/Data";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import firestoreDB from "../../services/firebase";
+import { getDocs, collection, query, where } from 'firebase/firestore';
     
 const ItemListContainer = () => {
     const [data, setData] = useState([]);
     const idCategory = useParams().idCategory
-    function getProductos() {
+    
+    function getItemsFromDB() {
         return new Promise( (resolve) => {
-            setTimeout( ()=> resolve(ItemData), 2000)
+            const productosCollection = collection(firestoreDB, "productos");
+            getDocs(productosCollection).then( snapshot => {
+                const docsData = snapshot.docs.map( doc =>  {
+                    return{ ...doc.data(), id: doc.id };
+                })
+                resolve(docsData);
+            });
         })
     };
 
-    useEffect(() => {
-        getProductos().then(products => {
-        if (idCategory === undefined) {
-            setData(products);
-        } else {
-            let itemsFilter = ItemData.filter((element) => element.category === idCategory)
-            setData(itemsFilter)
-        }
+    function getItemsFromDBByIdCategory( idCategory ) {
+        return new Promise( (resolve) => {
+        const productosCollectionRef = collection(firestoreDB, "productos");
+        const q = query(productosCollectionRef, where("category", "==", idCategory));
+        getDocs(q).then( snapshot => {
+            const docsData = snapshot.docs.map( doc =>  {
+                return{ ...doc.data(), id: doc.id };
+            })
+            resolve(docsData);
         });
-    }, [idCategory]);
+    })
+};
+
+useEffect(() => {
+    if (idCategory) {
+        getItemsFromDBByIdCategory( idCategory ).then((resolve) => {
+            setData(resolve)                
+        });
+        
+        } else {
+            getItemsFromDB().then((resolve) => {
+            setData(resolve)                
+        });
+    }
+}, [idCategory])
     
-    return (
+return (
     <div>
         <ItemList data={data} />
     </div>
-);
+)
 }
 
 export default ItemListContainer;

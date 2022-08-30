@@ -1,6 +1,6 @@
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () => {
@@ -8,27 +8,27 @@ export const NavBar = () => {
         <header>
             <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <Link to={"/"}>
+                    <NavLink to={"/"}>
                         <img src="./../../../assets/img/rapidLubeService-banerPng.png"  alt="logo"/>
-                    </Link>
+                    </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
-                    <Link to="/"> 
-                    </Link>
+                    <NavLink to="/"> 
+                    </NavLink>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <Link to={`/category/Aceites`} className="nav-link colorVailote" aria-current="page">Aceites</Link>
+                        <NavLink to={`/category/Aceites`} className="nav-link colorVailote" aria-current="page">Aceites</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link to={`/category/Filtros`} className="nav-link colorVailote" aria-current="page">Filtros</Link>
+                        <NavLink to={`/category/Filtros`} className="nav-link colorVailote" aria-current="page">Filtros</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link to={`/category/Baterías`} className="nav-link colorVailote" aria-current="page">Baterías</Link>
+                        <NavLink to={`/category/Baterías`} className="nav-link colorVailote" aria-current="page">Baterías</NavLink>
                         </li>
                         <li className="nav-item">
-                        <Link to={`/category/Lámparas`} className="nav-link colorVailote" aria-current="page">Lámparas</Link>
+                        <NavLink to={`/category/Lámparas`} className="nav-link colorVailote" aria-current="page">Lámparas</NavLink>
                         </li>
                     </ul>
                     <form className="d-flex" role="search">

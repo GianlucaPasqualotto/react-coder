@@ -9,7 +9,7 @@ import "../Item/Item.css";
 function Item ( { name, img, category, price, stock, id } ) {
     
     return (
-        <div class="row">
+        <div className="row">
             <div className='col-sm-4'>
                 <div className='card h-100'> 
                     <img className="card-img-top" src={img} alt="producto" />
