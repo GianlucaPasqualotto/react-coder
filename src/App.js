@@ -5,9 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './store/cartContext';
 import Cart from "./components/Cart/Cart";
 
-import firestoreDB from "./services/firebase";
-
 import './App.css';
+import CheckOut from './components/CheckOut/CheckOut';
 
 function App () {
   return (
@@ -20,6 +19,7 @@ function App () {
                 <Route path='/category/:idCategory' element={<ItemListContainer />} />
                 <Route path='/detalle/:id' element={<ItemDetailContainer />} />
                 <Route path='/cart' element={<Cart />} />
+                <Route path='/checkout' element={<CheckOut />} />
                 <Route path='*' element={<h1>Ups, no encontramos lo que buscabas :'(</h1>} />
               </Routes>
             </CartProvider>

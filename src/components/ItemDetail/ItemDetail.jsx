@@ -33,7 +33,7 @@ function ItemDetail ( {data} ) {
                         <ItemCount className="card-body" initial={1} stock={data.stock} onAdd={onAdd} /> :
                         <>
                         <ItemCount stock={data.stock} initial={1} onAdd={onAdd}/>
-                        <Link to={"/cart"}><button className='btn'>Ver Carrito</button></Link> <hr></hr>
+                        <Link to={`/cart`}><button className='btn'>Ver Carrito</button></Link> <hr></hr>
                         </>
                     }
                     <Link to={`/category/${data.category}`}><button className='btn'>Volver a Categoría: {data.category}</button></Link>

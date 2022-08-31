@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
-
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { resolvePath } from "react-router-dom";
+import ItemData from "../data/Data";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAYfgmppF9ZpoP0FAEJrbv5UkHTMsAWb0E",
@@ -13,7 +14,14 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-
 const firestoreDB = getFirestore(app);
 
+export async function saveProductsToFirebase(){
+    const productosCollection = collection(firestoreDB, "productos")
+    
+    for(let item of ItemData) {
+        const docref = await addDoc(productosCollection, item)
+        console.log("documento creado con id:", docref.id)
+    }
+}
 export default firestoreDB; 
