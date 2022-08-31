@@ -82,8 +82,12 @@ export function CartProvider({ children }) {
     function findItem(id) {
         return (copyCart.find(item => item.id === id))
     }
+    function clearCart() {
+        copyCart = []
+        setCart(copyCart)
+    }
     return (
-        <cartContext.Provider value={{ cart, addToCart, removeItem, removeAll, totalAmount, totalPrice }}>
+        <cartContext.Provider value={{ cart, addToCart, removeItem, removeAll, totalAmount, totalPrice, clearCart }}>
             {children}
         </cartContext.Provider>
 );

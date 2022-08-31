@@ -3,12 +3,13 @@
     display: flex;
     align-items: center;
 }
+
 .checkoutContainer,
 .thankYouContainer {
     width: 50%;
     padding: 2.5rem;
-    background-color: #1c1c1c;
-    box-shadow: 7px 5px 14px -6px #000000;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 7px 7px orange;
     margin: 2rem auto;
     border-radius: .6rem;
 }
@@ -23,7 +24,7 @@
 .label,
 .detailCheckOut {
     text-align: center;
-    color: var(--white);
+    color: blue;
     font-size: 1.7rem;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .formInput {
-    background-color: transparent;
+    background-color: rgba(250, 200, 90, 0.496);
     color: var(--white);
     border: 2px solid var(--white);
     padding: 1.5rem;
@@ -48,12 +49,13 @@
 }
 
 .formInput::placeholder {
-    color: #cdcdcd;
+    color: rgb(140, 170, 203);
     text-align: center;
+    font-size: 25px;
 }
 
 .title {
-    color: var(--white);
+    color: blue;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -62,7 +64,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--white);
+    color: blue;
     text-align: center;
     gap: 2rem;
     background-color: var(--black);
@@ -70,7 +72,7 @@
 
 .buttonForm,
 .buttonThankYou {
-    background-color: var(--white);
+    background-color: orange;
     font-size: 1.8rem;
     padding: 1.5rem;
     border: none;
@@ -80,12 +82,15 @@
     margin-top: 2rem;
     width: 40%;
     transition: background-color .3s;
+    color: white;
 
 }
 
 .buttonForm:hover,
 .buttonThankYou:hover {
-    background-color: var(--main-color);
+    background-color: transparent;
+    color: orange;
+    border: solid 2px orange;
 }
 
 .titleThankYou {
