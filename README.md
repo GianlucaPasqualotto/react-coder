@@ -18,21 +18,23 @@
 </ul><ul>
 <li>Firebase</li>
 </ul><h2>Setup</h2>
-<hr><p>"@fortawesome/fontawesome-svg-core": "^6.1.2",
-"@fortawesome/free-regular-svg-icons": "^6.1.2",
-"@fortawesome/free-solid-svg-icons": "^6.1.2",
-"@fortawesome/react-fontawesome": "^0.2.0",
-"@popperjs/core": "^2.11.5",
-"bootstrap": "^5.2.0",
-"firebase": "^9.9.3",
-"react": "^18.2.0",
-"react-dom": "^18.2.0",
-"react-router-dom": "^6.3.0",
-"react-scripts": "5.0.1",
-"react-swal": "^4.0.0",
-"sweetalert": "^2.1.2",
-"sweetalert2": "^11.4.29",
-"sweetalert2-react-content": "^5.0.3"</p><h5>Steps</h5><ul>
+<hr><p>
+  "@fortawesome/fontawesome-svg-core": "^6.1.2",
+  "@fortawesome/free-regular-svg-icons": "^6.1.2",
+  "@fortawesome/free-solid-svg-icons": "^6.1.2",
+  "@fortawesome/react-fontawesome": "^0.2.0",
+  "@popperjs/core": "^2.11.5",
+  "bootstrap": "^5.2.0",
+  "firebase": "^9.9.3",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.3.0",
+  "react-scripts": "5.0.1",
+  "react-swal": "^4.0.0",
+  "sweetalert": "^2.1.2",
+  "sweetalert2": "^11.4.29",
+  "sweetalert2-react-content": "^5.0.3"
+</p><h5>Steps</h5><ul>
 <li>npm install i para instalar todas las dependencias</li>
 </ul><ul>
 <li>npm install start para renderizar el proyecto en un host local</li>
