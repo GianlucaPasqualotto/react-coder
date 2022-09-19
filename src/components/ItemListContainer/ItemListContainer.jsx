@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import "../ItemListContainer.css";
-import ItemData from "../../data/Data";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import firestoreDB from "../../services/firebase";

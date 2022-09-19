@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 
 export const cartContext = createContext();

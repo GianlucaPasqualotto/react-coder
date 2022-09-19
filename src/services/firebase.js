@@ -1,6 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import { resolvePath } from "react-router-dom";
 import ItemData from "../data/Data";
 
 const firebaseConfig = {
