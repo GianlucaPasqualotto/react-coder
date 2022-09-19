@@ -33,7 +33,7 @@
 "sweetalert": "^2.1.2",
 "sweetalert2": "^11.4.29",
 "sweetalert2-react-content": "^5.0.3"</p><h5>Steps</h5><ul>
-<li>npm install i para instalar todas las dependencias npm install start para renderizar el proyecto en un host local</li>
+<li>npm install i para instalar todas las dependencias</li>
 </ul><ul>
 <li>npm install start para renderizar el proyecto en un host local</li>
 </ul><h2>Project Status</h2>
