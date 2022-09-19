@@ -1,70 +1,46 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>E-commerce - Rapid Lube Service</h1>
+<hr><p>Lubricentro ubicado en la provincia de Mendoza</p><h2>General Information</h2>
+<hr><ul>
+<li>Rapid Lube Service es un lubricentro ubicado en Guaymallén, Provincia de Mendoza. El cual necesitaba expandir su público más allá de los clientes habituales. Es por ello que se creó éste ecommerce para dar visibilidad las 24hs del día y a todo el país.</li>
+</ul><ul>
+<li>La misión es ayudar a cada persona que necesite repuestos para su vehículo.</li>
+</ul><ul>
+<li>La visión es alcanzar clientes en todo Argentina.</li>
+</ul><h2>Technologies Used</h2>
+<hr><ul>
+<li>HTML</li>
+</ul><ul>
+<li>CSS</li>
+</ul><ul>
+<li>JavaScript</li>
+</ul><ul>
+<li>React</li>
+</ul><ul>
+<li>Firebase</li>
+</ul><h2>Setup</h2>
+<hr><p>"@fortawesome/fontawesome-svg-core": "^6.1.2",
+"@fortawesome/free-regular-svg-icons": "^6.1.2",
+"@fortawesome/free-solid-svg-icons": "^6.1.2",
+"@fortawesome/react-fontawesome": "^0.2.0",
+"@popperjs/core": "^2.11.5",
+"bootstrap": "^5.2.0",
+"firebase": "^9.9.3",
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-router-dom": "^6.3.0",
+"react-scripts": "5.0.1",
+"react-swal": "^4.0.0",
+"sweetalert": "^2.1.2",
+"sweetalert2": "^11.4.29",
+"sweetalert2-react-content": "^5.0.3"</p><h5>Steps</h5><ul>
+<li>npm install i para instalar todas las dependencias npm install start para renderizar el proyecto en un host local</li>
+</ul><ul>
+<li>npm install start para renderizar el proyecto en un host local</li>
+</ul><h2>Project Status</h2>
+<hr><p>Presentado como proyecto final para el curso de React Js de Coderhouse</p><h2>Improvements</h2>
+<hr><ul>
+<li>Agregar información de Rapid Lube Service en nuevas secciones, "Nosotros" "Contacto"</li>
+</ul><ul>
+<li>Solicitar turnos para visitar el local y realizar el service a su vehículo</li>
+</ul><h2>Contact</h2>
+<hr><p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/pasqualottogianluca/"><img target="_blank
