@@ -33,24 +33,6 @@ async function handleSubmit(e) {
     setOrderFirebase({ id: order.id, complete: true });
     clearCart()
 }
-/* Control de Stock . . .  */
-//     const collectionRefStock = collection(firestoreDB, "productos");
-//     const arrayIds = cart.map((item) => item.id);
-//     const q = query(collectionRefStock, where(documentId(), "in", arrayIds));
-//     let batch = writeBatch(firestoreDB);
-//     getDocs(q).then((response) => {
-//     response.docs.forEach((doc) => {
-//         const itemToUpdate = cart.find((prod) => prod.id === doc.id);
-        
-//         if (doc.data().stock >= itemToUpdate.quantity) {
-//             batch.update(doc.ref, {
-//                 stock: doc.data().stock - itemToUpdate.quantity,
-//             });
-//         }
-//         batch.commit();
-//         console.log("commit")
-//     });
-// });
 
 function inputChangeHandler(e) {
     const input = e.target;
